@@ -1,0 +1,230 @@
+/*#faf6ef*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #faf6ef;
+    color: #49382e;
+}
+
+header {
+    background-color: #eee4d6;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: #49382e;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #a47b5b;
+}
+
+.hero {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("Images/Coffee.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #eee0ce;
+    color: #49382e;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #d9c5aa;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+section > p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 25px auto 0;
+}
+
+.menu-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.menu-card h3 {
+    font-size: 23px;
+    margin: 20px 10px 10px;
+}
+
+.menu-card p {
+    padding: 0 20px 25px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#about {
+    background-color: #eee4d6;
+    text-align: center;
+}
+
+#about p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin: 12px 0;
+    font-size: 17px;
+}
+
+footer {
+    background-color: #49382e;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    font-size: 15px;
+}
+
+footer p {
+    margin: 12px 0;
+}
+
+/*CP*/
+@media (max-width: 500px) {
+
+    header {
+        padding: 18px 10px;
+  }
+
+    header h2 {
+        font-size: 21px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 80px 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+    }
+
+    .menu-card img {
+        height: 200px;
+    }
+
+    .menu-card h3 {
+        font-size: 21px;
+    }
+
+    .menu-card p {
+        font-size: 15px;
+    }
+
+    #about p {
+        font-size: 15px;
+    }
+
+    #contact p {
+        font-size: 15px;
+    }
+
+}
